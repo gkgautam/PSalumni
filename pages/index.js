@@ -61,7 +61,6 @@ export default function Home({ data }) {
       <div className="container-fluid" style={{backgroundColor:"#FFE63B"}}>
         <div className="container ">
           <div className="row  my-4">
-          hello
             <h2 className=' m-0 my-5 text-center'>2022 Publicis Sapient Alumni Network Award Winners</h2>
 
 
