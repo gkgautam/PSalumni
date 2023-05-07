@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router';
 import { destroyCookie, parseCookies } from 'nookies';
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const AdminNavbar = () => {
 
@@ -41,7 +42,7 @@ const AdminNavbar = () => {
           <nav className="navbar navbar-expand-lg navbar-light py-4 shadow-sm">
                 <div className="container-fluid px-5">
                     <a className="navbar-brand" href="#">
-                        <img src="/logo.svg" alt="" width="95" height="52" />
+                        <Image src="/logo.svg" alt="image" width="95" height="52" />
                     </a>
                     <button style={{ boxShadow: "none" }} className="border-0 navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>

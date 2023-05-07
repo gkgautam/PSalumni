@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../../Components/Navbar'
 import Footer from '../../Components/Footer';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export async function getServerSideProps(context) {
 
@@ -27,7 +28,7 @@ function otherprofile({ data }) {
         <div className="container">
           <div className="row my-3 d-flex justify-content-center bg-light rounded-5">
             <div className="col-xl-4 col-lg-5 col-md-6 col-sm-12 col-12 d-flex justify-content-center align-items-center">
-              <img src={data.profile_img?data.profile_img:'https://static.licdn.com/aero-v1/sc/h/244xhbkr7g40x6bsu4gi6q4ry'} className="rounded-circle border border-primary border-5" width="300px" height="300px" alt="profileImage" />
+              <Image src={data.profile_img?data.profile_img:'https://static.licdn.com/aero-v1/sc/h/244xhbkr7g40x6bsu4gi6q4ry'} className="rounded-circle border border-primary border-5" width="300px" height="300px" alt="profileImage" />
             </div>
             <div className="col-xl-5 col-lg-5 col-md-6 col-sm-12 col-12 my-3">
             <h1 className=""><i>{data.name}</i></h1>

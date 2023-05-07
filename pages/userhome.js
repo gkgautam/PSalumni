@@ -1,7 +1,7 @@
 import Footer from '../Components/Footer';
 import Navbar from '../Components/Navbar';
 import Link from 'next/link';
-
+import Image from 'next/image';
 
 export default function Userhome() {
   return (
@@ -20,7 +20,7 @@ export default function Userhome() {
         </div>
       </div>
       <div className="container-fluid p-0">
-        <img src="/indexImg.jpg" alt="" width="100%" />
+        <Image src="/indexImg.jpg" alt="" width="100%" />
       </div>
 
       

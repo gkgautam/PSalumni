@@ -1,6 +1,7 @@
 import Footer from '../Components/Footer';
 import Navbar from '../Components/Navbar';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export async function getServerSideProps(ctx) {
   const res = await fetch(`http://localhost:3000/api/allemp`);
@@ -29,14 +30,14 @@ export default function Home({ data }) {
         </div>
       </div>
       <div className="container-fluid p-0">
-        <img src="/indexImg.jpg" alt="" width="100%" />
+        <Image src="/indexImg.jpg" alt="" width="100%" />
       </div>
 
       <div className="container-fluid my-5">
         <div className="container">
           <div className="row">
             <div className="col-xl-5 col-lg-5 col-md-6 col-sm-12 col-12">
-              <img src="/nizel.png" width="100%" alt="nizel" />
+              <Image src="/nizel.png" width="100%" alt="nizel" />
             </div>
             <div className="col-xl-6 col-lg-7 col-md-6 col-sm-12 col-12 d-flex flex-column justify-content-center">
               <h2 className='mx-3 mb-5'>A Message from our CEO</h2>
@@ -73,7 +74,7 @@ export default function Home({ data }) {
                         <>
                           <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 my-3  d-flex justify-content-center">
                             <div className="card border-0 d-flex justify-content-center align-items-center" style={{ width: "18rem", backgroundColor:"#FFE63B" }}>
-                              <img  src={prImage} style={{boxShadow:"0px 0px 0px 6px #FE414D"}} className="rounded-circle" width="220px" height="220px" alt="..." />
+                              <Image  src={prImage} style={{boxShadow:"0px 0px 0px 6px #FE414D"}} className="rounded-circle" width="220px" height="220px" alt="..." />
                               <div className="card-body text-center">
                                 <h5 className="card-title">{val.name}</h5>
                                 <p className="card-text text-center">{val.title}</p>
