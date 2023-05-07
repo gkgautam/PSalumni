@@ -1,6 +1,6 @@
 import React from 'react';
 import AdminNavbar from './components/AdminNavbar';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 export async function getServerSideProps(ctx) {
     const res = await fetch(`http://localhost:3000/api/allemp`);
@@ -49,7 +49,7 @@ function allemp({ data }) {
                                             </div>
                                         </div>
                                         <div className='col-6 d-flex justify-content-center'>
-                                        <Image style={{height:"400px", width:"400px", borderRadius:"50%"}}  src={item.profile_img} alt="image"/>
+                                        <img style={{height:"400px", width:"400px", borderRadius:"50%"}}  src={item.profile_img} alt="image"/>
                                         </div>
                                         </div>
                                     )

@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../Components/Footer';
 import Navbar from '../Components/Navbar';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 
 export async function getServerSideProps(ctx) {
@@ -30,7 +30,7 @@ const Jobs = ({ data }) => {
                       data.map((val) => {
                         return (
                           <div className="card my-3" style={{width: "100%"}} key={val._id}>
-                            <Image src={val.job_img} className="card-img-top" alt="..." />
+                            <img src={val.job_img} className="card-img-top" alt="..." />
                               <div className="card-body">
                                 <h5 className="card-title"> <strong>Post -</strong> {val.job_title}</h5>
                                 <p className="card-text"> <strong>Description :</strong> {val.job_desc}</p>
