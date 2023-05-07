@@ -40,7 +40,7 @@ function otherprofile({ data }) {
             <h5 className="card-text"><strong>Joining Date :</strong> {data.start_date}</h5>
             <h5 className="card-text"><strong>Leaving Date :</strong> {data.end_date}</h5>
             <h5 className="card-text"><strong>Business Unit :</strong> {data.business_unit}</h5>
-            <h5 className="card-text"><strong>LinkedIn :</strong> <a href={data.social_media} target="_blank">{data.social_media}</a></h5>
+            <h5 className="card-text"><strong>LinkedIn :</strong> <a href={data.social_media} rel="noreferrer" target="_blank">{data.social_media}</a></h5>
 
             <Link href="#">
               <button className='btn rounded-pill my-3' style={{ boxShadow: "none", backgroundColor: "black", color: "white" }}>Contact</button>
