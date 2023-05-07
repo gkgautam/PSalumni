@@ -60,21 +60,21 @@ const Referrals = () => {
             <div className="col-4">
               <form method='POST'>
                 <legend className='h1 text-center'>Refer someone you know</legend>
-                <div class="mb-3">
-                  <label for="fullname1" class="form-label">Person name</label>
-                  <input type="text" name='person_name' placeholder='Person name' style={{boxShadow:"none"}} class="form-control" id="fullname1" aria-describedby="emailHelp" value={signupData.person_name} onChange={getSignupData} />
+                <div className="mb-3">
+                  <label htmlFor="fullname1" className="form-label">Person name</label>
+                  <input type="text" name='person_name' placeholder='Person name' style={{boxShadow:"none"}} className="form-control" id="fullname1" aria-describedby="emailHelp" value={signupData.person_name} onChange={getSignupData} />
                 </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Person email</label>
-                  <input type="text" name="person_email" placeholder='person email' style={{boxShadow:"none"}} class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value={signupData.person_email} onChange={getSignupData} />
+                <div className="mb-3">
+                  <label htmlFor="exampleInputEmail1" className="form-label">Person email</label>
+                  <input type="text" name="person_email" placeholder='person email' style={{boxShadow:"none"}} className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value={signupData.person_email} onChange={getSignupData} />
                 </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Resume</label>
-                  <input type="file" name="person_resume" placeholder='Resume' style={{boxShadow:"none"}} class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value={signupData.person_resume} onChange={getSignupData} />
+                <div className="mb-3">
+                  <label htmlFor="exampleInputEmail1" className="form-label">Resume</label>
+                  <input type="file" name="person_resume" placeholder='Resume' style={{boxShadow:"none"}} className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value={signupData.person_resume} onChange={getSignupData} />
                 </div>
                
                 <div className="mt-4">
-                  <button type="submit" class="btn rounded-pill" style={{ backgroundColor: "#FE414D", color: "white", width: "130px", boxShadow:"none"}} onClick={signupUser}>Referral</button>
+                  <button type="submit" className="btn rounded-pill" style={{ backgroundColor: "#FE414D", color: "white", width: "130px", boxShadow:"none"}} onClick={signupUser}>Referral</button>
                 </div>
 
               </form>

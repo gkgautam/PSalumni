@@ -73,22 +73,22 @@ const Signup = () => {
               <form method='POST'>
                 <legend className='h1 text-center'>Sign up</legend>
                 
-                <div class="mb-3">
-                  <label for="fullname1" class="form-label">Full Name</label>
-                  <input type="text" name='name' placeholder='Name' style={{boxShadow:"none"}} class="form-control" id="fullname1"  value={signupData.name} onChange={getSignupData} />
+                <div className="mb-3">
+                  <label htmlFor="fullname1" className="form-label">Full Name</label>
+                  <input type="text" name='name' placeholder='Name' style={{boxShadow:"none"}} className="form-control" id="fullname1"  value={signupData.name} onChange={getSignupData} />
                 </div>
 
-                <div class="mb-3">
-                  <label for="email" class="form-label">Personal Email Id or Company Email Id</label>
-                  <input type="email" name="emailorpersonal" placeholder='Email address' style={{boxShadow:"none"}} class="form-control" id="email" value={signupData.emailorpersonal} onChange={getSignupData} />
+                <div className="mb-3">
+                  <label htmlFor="email" className="form-label">Personal Email Id or Company Email Id</label>
+                  <input type="email" name="emailorpersonal" placeholder='Email address' style={{boxShadow:"none"}} className="form-control" id="email" value={signupData.emailorpersonal} onChange={getSignupData} />
                 </div>
-                <div class="mb-3">
-                  <label for="password" class="form-label">Password</label>
-                  <input type="password" name="password" placeholder="Password" style={{boxShadow:"none"}} class="form-control" id="password" value={signupData.password} onChange={getSignupData} />
+                <div className="mb-3">
+                  <label htmlFor="password" className="form-label">Password</label>
+                  <input type="password" name="password" placeholder="Password" style={{boxShadow:"none"}} className="form-control" id="password" value={signupData.password} onChange={getSignupData} />
                 </div>
 
                 <div className="mt-4">
-                  <button type="submit" class="btn rounded-pill" style={{ backgroundColor: "#FE414D", color: "white", width: "130px", boxShadow:"none"}} onClick={signupUser}>Sign up</button>
+                  <button type="submit" className="btn rounded-pill" style={{ backgroundColor: "#FE414D", color: "white", width: "130px", boxShadow:"none"}} onClick={signupUser}>Sign up</button>
                 </div>
 
                 <div className="mt-4">

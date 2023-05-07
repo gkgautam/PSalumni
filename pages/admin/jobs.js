@@ -63,30 +63,30 @@ const Registercurrentemp = () => {
             <div className="col-4">
               <form method='POST'>
                 <legend className='h1 text-center'>Post new job vacancies</legend>
-                <div class="mb-3">
-                  <label for="fullname1" class="form-label">Job title</label>
-                  <input type="text" name='job_title' placeholder='Job title' style={{boxShadow:"none"}} class="form-control" id="fullname1" aria-describedby="emailHelp" value={signupData.job_title} onChange={getSignupData} />
+                <div className="mb-3">
+                  <label htmlFor="fullname1" className="form-label">Job title</label>
+                  <input type="text" name='job_title' placeholder='Job title' style={{boxShadow:"none"}} className="form-control" id="fullname1" aria-describedby="emailHelp" value={signupData.job_title} onChange={getSignupData} />
                 </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Apply link</label>
-                  <input type="text" name="apply_link" placeholder='link' style={{boxShadow:"none"}} class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value={signupData.apply_link} onChange={getSignupData} />
+                <div className="mb-3">
+                  <label htmlFor="exampleInputEmail1" className="form-label">Apply link</label>
+                  <input type="text" name="apply_link" placeholder='link' style={{boxShadow:"none"}} className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value={signupData.apply_link} onChange={getSignupData} />
                 </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Job image</label>
-                  <input type="text" name="job_img" placeholder='image' style={{boxShadow:"none"}} class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value={signupData.job_img} onChange={getSignupData} />
+                <div className="mb-3">
+                  <label htmlFor="exampleInputEmail1" className="form-label">Job image</label>
+                  <input type="text" name="job_img" placeholder='image' style={{boxShadow:"none"}} className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value={signupData.job_img} onChange={getSignupData} />
                 </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Job description</label>
-                  <input type="text" name="job_desc" placeholder="description" style={{boxShadow:"none"}} class="form-control" id="exampleInputPassword1" value={signupData.job_desc} onChange={getSignupData} />
+                <div className="mb-3">
+                  <label htmlFor="exampleInputPassword1" className="form-label">Job description</label>
+                  <input type="text" name="job_desc" placeholder="description" style={{boxShadow:"none"}} className="form-control" id="exampleInputPassword1" value={signupData.job_desc} onChange={getSignupData} />
                 </div>
-                <div class="mb-3">
-                  <label for="fullname1" class="form-label">No. of vacancies</label>
-                  <input type="text" name='no_vacancy' placeholder='vacancies' style={{boxShadow:"none"}} class="form-control" id="fullname1" aria-describedby="emailHelp" value={signupData.no_vacancy} onChange={getSignupData} />
+                <div className="mb-3">
+                  <label htmlFor="fullname1" className="form-label">No. of vacancies</label>
+                  <input type="text" name='no_vacancy' placeholder='vacancies' style={{boxShadow:"none"}} className="form-control" id="fullname1" aria-describedby="emailHelp" value={signupData.no_vacancy} onChange={getSignupData} />
                 </div>
 
                 
                 <div className="mt-4">
-                  <button type="submit" class="btn rounded-pill" style={{ backgroundColor: "#FE414D", color: "white", width: "130px", boxShadow:"none"}} onClick={signupUser}>Post job</button>
+                  <button type="submit" className="btn rounded-pill" style={{ backgroundColor: "#FE414D", color: "white", width: "130px", boxShadow:"none"}} onClick={signupUser}>Post job</button>
                 </div>
 
               </form>

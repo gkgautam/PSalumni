@@ -113,19 +113,19 @@ const Signin = () => {
               <form>
                 <legend className='h1 text-center'>Login </legend>
 
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" name="email" placeholder='email' style={{ boxShadow: "none" }} class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value={loginData.email} onChange={getLoginData} />
+                <div className="mb-3">
+                  <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
+                  <input type="email" name="email" placeholder='email' style={{ boxShadow: "none" }} className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value={loginData.email} onChange={getLoginData} />
                 </div>
 
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" name="password" placeholder='password' style={{ boxShadow: "none" }} class="form-control" id="exampleInputPassword1" value={loginData.password} onChange={getLoginData} />
+                <div className="mb-3">
+                  <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
+                  <input type="password" name="password" placeholder='password' style={{ boxShadow: "none" }} className="form-control" id="exampleInputPassword1" value={loginData.password} onChange={getLoginData} />
                 </div>
 
                 <div className="mt-4">
   
-                  <button type="submit" class="btn rounded-pill" style={{ backgroundColor: "#FE414D", color: "white", width: "130px", boxShadow: "none" }} onClick={userLogin}>Login</button>
+                  <button type="submit" className="btn rounded-pill" style={{ backgroundColor: "#FE414D", color: "white", width: "130px", boxShadow: "none" }} onClick={userLogin}>Login</button>
                 </div>
 
                 <div className="mt-4">

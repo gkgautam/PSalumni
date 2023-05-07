@@ -28,12 +28,12 @@ const dashboard = () => {
       <AdminNavbar />
       <Link href="/admin/registercurrentemp">
       <div className="mt-4">
-                  <button type="submit" class="btn rounded-pill" style={{ backgroundColor: "#FE414D", color: "white", width: "130px", boxShadow:"none"}}>Add employee</button>
+                  <button type="submit" className="btn rounded-pill" style={{ backgroundColor: "#FE414D", color: "white", width: "130px", boxShadow:"none"}}>Add employee</button>
                 </div>
       </Link>
       <Link href="/admin/jobs">
       <div className="mt-4">
-                  <button type="submit" class="btn rounded-pill" style={{ backgroundColor: "#FE414D", color: "white", width: "130px", boxShadow:"none"}}>post new vacancies</button>
+                  <button type="submit" className="btn rounded-pill" style={{ backgroundColor: "#FE414D", color: "white", width: "130px", boxShadow:"none"}}>post new vacancies</button>
                 </div>
       </Link>
     </>

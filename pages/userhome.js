@@ -15,7 +15,7 @@ export default function Userhome() {
           Where colleagues unite for good.</h3>
         <div className='text-center mt-5'>
           <Link href="/searchalumini">
-          <button type="button" class="btn bg-black text-white rounded-pill" style={{ boxShadow: "none", width: "130px" }}>Search Alumni</button>
+          <button type="button" className="btn bg-black text-white rounded-pill" style={{ boxShadow: "none", width: "130px" }}>Search Alumni</button>
           </Link>
         </div>
       </div>

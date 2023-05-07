@@ -29,13 +29,13 @@ const Jobs = ({ data }) => {
                     {
                       data.map((val) => {
                         return (
-                          <div class="card my-3" style={{width: "100%"}}>
-                            <img src={val.job_img} class="card-img-top" alt="..." />
-                              <div class="card-body">
-                                <h5 class="card-title"> <strong>Post -</strong> {val.job_title}</h5>
-                                <p class="card-text"> <strong>Description :</strong> {val.job_desc}</p>
-                                <p class="card-text"> <strong>Number of Vacancies :</strong> {val.no_vacancy}</p>
-                                <a href={val.apply_link} class="btn btn-primary">Apply Now</a>
+                          <div className="card my-3" style={{width: "100%"}}>
+                            <img src={val.job_img} className="card-img-top" alt="..." />
+                              <div className="card-body">
+                                <h5 className="card-title"> <strong>Post -</strong> {val.job_title}</h5>
+                                <p className="card-text"> <strong>Description :</strong> {val.job_desc}</p>
+                                <p className="card-text"> <strong>Number of Vacancies :</strong> {val.no_vacancy}</p>
+                                <a href={val.apply_link} className="btn btn-primary">Apply Now</a>
                               </div>
                           </div>
                         )

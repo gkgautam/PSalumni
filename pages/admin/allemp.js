@@ -30,20 +30,20 @@ function allemp({ data }) {
                                         <div className='row '>
                                         <div className='col-6 '>
 
-                                            <div class="card w-100">
-                                                <div class="card-body">
-                                                    <p class="card-text">Database Id : {item._id}</p>
-                                                    <p class="card-text">Name : {item.name}</p>
-                                                    <p class="card-text">PS Id : {item.ps_id}</p>
-                                                    <p class="card-text">Title : {item.title}</p>
-                                                    <p class="card-text">Person Type : {item.person_type}</p>
-                                                    <p class="card-text">Joining Date : {item.start_date}</p>
-                                                    <p class="card-text">Business Unit : {item.business_unit}</p>
-                                                    <p class="card-text">Employee Email Id: {item.email}</p>
-                                                    <p class="card-text">Personal Email Id: {item.personal_email}</p>
-                                                    <p class="card-text">Project Id : {item.p_id}</p>
-                                                    <p class="card-text">People Manager : {item.people_mgr}</p>
-                                                    <a href="#" class="btn btn-primary">Update</a>
+                                            <div className="card w-100">
+                                                <div className="card-body">
+                                                    <p className="card-text">Database Id : {item._id}</p>
+                                                    <p className="card-text">Name : {item.name}</p>
+                                                    <p className="card-text">PS Id : {item.ps_id}</p>
+                                                    <p className="card-text">Title : {item.title}</p>
+                                                    <p className="card-text">Person Type : {item.person_type}</p>
+                                                    <p className="card-text">Joining Date : {item.start_date}</p>
+                                                    <p className="card-text">Business Unit : {item.business_unit}</p>
+                                                    <p className="card-text">Employee Email Id: {item.email}</p>
+                                                    <p className="card-text">Personal Email Id: {item.personal_email}</p>
+                                                    <p className="card-text">Project Id : {item.p_id}</p>
+                                                    <p className="card-text">People Manager : {item.people_mgr}</p>
+                                                    <a href="#" className="btn btn-primary">Update</a>
                                                 </div>
                                             </div>
                                         </div>

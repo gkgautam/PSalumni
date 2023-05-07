@@ -24,7 +24,7 @@ export default function Home({ data }) {
           Where colleagues unite for good.</h3>
         <div className='text-center mt-5'>
           <Link href="/signup">
-            <button type="button" class="btn bg-black text-white rounded-pill" style={{ boxShadow: "none", width: "130px" }}>Join us</button>
+            <button type="button" className="btn bg-black text-white rounded-pill" style={{ boxShadow: "none", width: "130px" }}>Join us</button>
           </Link>
         </div>
       </div>
@@ -42,10 +42,10 @@ export default function Home({ data }) {
               <h2 className='mx-3 mb-5'>A Message from our CEO</h2>
               <p className='mx-3'>I have always been fascinated by technology. I always imagined it to be the thing that imbues people with modern-day superpowers, so I pursued that passion by starting a company all about how technology was going to change business I am now the Global Chief Executive Officer of Publicis Sapient. While the CEO role encompasses a breadth of responsibilities, I like to spend as much time as possible with our clients and our people. With clients., I enjoy discussing how their customers are evolving, new competitive threats, the role of technology in their business, and current and evolving business models.</p>
               <figure className='mx-3'>
-                <blockquote class="blockquote">
+                <blockquote className="blockquote">
                   <p>Nigel Vaz</p>
                 </blockquote>
-                <figcaption class="blockquote-footer">
+                <figcaption className="blockquote-footer">
                   CEO <cite title="Source Title">Publicis Sapient</cite>
                 </figcaption>
               </figure>
@@ -72,12 +72,12 @@ export default function Home({ data }) {
                       return (
                         <>
                           <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 my-3  d-flex justify-content-center">
-                            <div class="card border-0 d-flex justify-content-center align-items-center" style={{ width: "18rem", backgroundColor:"#FFE63B" }}>
-                              <img  src={prImage} style={{boxShadow:"0px 0px 0px 6px #FE414D"}} class="rounded-circle" width="220px" height="220px" alt="..." />
-                              <div class="card-body text-center">
-                                <h5 class="card-title">{val.name}</h5>
-                                <p class="card-text text-center">{val.title}</p>
-                                <p class="card-text text-center">{val.end_date}</p>
+                            <div className="card border-0 d-flex justify-content-center align-items-center" style={{ width: "18rem", backgroundColor:"#FFE63B" }}>
+                              <img  src={prImage} style={{boxShadow:"0px 0px 0px 6px #FE414D"}} className="rounded-circle" width="220px" height="220px" alt="..." />
+                              <div className="card-body text-center">
+                                <h5 className="card-title">{val.name}</h5>
+                                <p className="card-text text-center">{val.title}</p>
+                                <p className="card-text text-center">{val.end_date}</p>
 
                               </div>
                             </div>
