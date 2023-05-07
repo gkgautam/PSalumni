@@ -7,7 +7,7 @@ export async function getServerSideProps(context) {
 
   const id = context.params.id;
 
-  const res = await fetch(`http://localhost:3000/api/${id}`)
+  const res = await fetch(`https://psalumni.vercel.app/api/${id}`)
   const data = await res.json();
 
   return {

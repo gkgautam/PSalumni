@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 import { setCookie, parseCookies } from 'nookies';
 
 // export async function getServerSideProps(ctx) {
-//   const res = await fetch(`http://localhost:3000/api/userLogin`);
+//   const res = await fetch(`https://psalumni.vercel.app/api/userLogin`);
 //   const data = await res.json();
 //   const { token } = parseCookies(ctx);
 
