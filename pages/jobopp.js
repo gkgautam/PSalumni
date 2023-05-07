@@ -29,7 +29,7 @@ const Jobs = ({ data }) => {
                     {
                       data.map((val) => {
                         return (
-                          <div className="card my-3" style={{width: "100%"}}>
+                          <div className="card my-3" style={{width: "100%"}} key={val._id}>
                             <img src={val.job_img} className="card-img-top" alt="..." />
                               <div className="card-body">
                                 <h5 className="card-title"> <strong>Post -</strong> {val.job_title}</h5>

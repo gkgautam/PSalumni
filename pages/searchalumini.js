@@ -13,7 +13,7 @@ export async function getServerSideProps(ctx) {
         props: { data },
     }
 }
-function searchalumini({ data }) {
+function Searchalumini({ data }) {
 
 
     const [searchValue, setSearchValue] = useState("");
@@ -53,7 +53,7 @@ function searchalumini({ data }) {
                                     }).map((item) => {
                                         return (
 
-                                            <div className="card border-5 mb-3">
+                                            <div className="card border-5 mb-3" key={item._id}>
                                                 <div className="card-header" style={{ fontSize: "28px", fontWeight: "bold" }}>{item.name}</div>
                                                 <div className="card-body">
                                                     <h5 className="card-title">Title : {item.title}</h5>
@@ -80,4 +80,4 @@ function searchalumini({ data }) {
     )
 }
 
-export default searchalumini
+export default Searchalumini

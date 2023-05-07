@@ -19,7 +19,7 @@ export async function getServerSideProps(ctx) {
   }
 }
 
-const index = () => {
+const Index = () => {
 
   const router = useRouter();
 
@@ -82,4 +82,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index
