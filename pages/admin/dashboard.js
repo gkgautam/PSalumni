@@ -4,7 +4,9 @@ import React from 'react';
 import AdminNavbar from './components/AdminNavbar';
 
 export async function getServerSideProps(ctx) {
-  const res = await fetch(`http://localhost:3000/api/`)
+  // const res = await fetch(`http://localhost:3000/api/`)
+  const res = await fetch(`${process.env.NODE_ENV=="production"?"https://psalumni.vercel.app/api/":"http://localhost:3000/api/"}`);
+
 
   const { adminToken } = parseCookies(ctx);
 

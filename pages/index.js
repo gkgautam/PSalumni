@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export async function getServerSideProps(ctx) {
   // const res = await fetch(`http://localhost:3000/api/allemp`);
-  const res = await fetch(`${process.env.NODE_ENV=="production"?"https://psalumni.vercel.app/api/fetchIssuesApi":"http://localhost:3000/api/allemp"}`);
+  const res = await fetch(`${process.env.NODE_ENV=="production"?"https://psalumni.vercel.app/api/allemp":"http://localhost:3000/api/allemp"}`);
   const data = await res.json();
 
   // Pass data to the page via props
